@@ -1,17 +1,19 @@
 import React from 'react';
 import { useDispatch, useSelector } from '../types';
 import { getDapplets } from '../services/actions/dapplets';
+import Tags from '../components/Tags/Tags';
 import s from './test.module.css'
 
-function Intro() {
+function Dapplets() {
   const dispatch = useDispatch()
-  const store = useSelector(store => store.info.dappletsSuccess)
+  const store = useSelector(store => store.dapplets.dappletsSuccess)
   
   React.useEffect(()=>{
     dispatch(getDapplets())
   }, [dispatch])
   return (
     <div>
+      <h2>all dapplets</h2>
       <table className={s.table_dapplets}>
         <tr>
         <th>id</th>
@@ -62,8 +64,9 @@ function Intro() {
           })
         }
       </table>
+      <Tags />
     </div>
   );
 }
 
-export default Intro;
+export default Dapplets;

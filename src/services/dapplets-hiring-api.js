@@ -6,6 +6,10 @@ export const getDappletstsRequest = async () => {
   const res = await getResourceRaw(`/dapplets`);
   return res;
 };
+export const getTagsRequest = async () => {
+  const res = await getResourceRaw(`/tags`);
+  return res;
+};
 
 
 const getResourceRaw = async (url) => {

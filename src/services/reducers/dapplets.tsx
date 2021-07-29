@@ -17,7 +17,7 @@ import {
     dappletsFailed: false,
   };
   
-  export const infoReducer = (state = initialState, action:TDappletActions): TInitialState => {
+  export const dappletsReducer = (state = initialState, action:TDappletActions): TInitialState => {
     switch (action.type) {
       case GET_DAPPLET_REQUEST: {
         return {

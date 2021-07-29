@@ -23,8 +23,11 @@ export type AppThunk<TReturn = void> = ActionCreator<
 export type AppDispatch = typeof store.dispatch; 
   
  export type TDapplets = {
-    calories: number
-  }
+  calories: number
+}
+export type TTags = {
+   calories: number
+}
 
 export  type TLocationItem = {
     hash: string

@@ -1,3 +1,3 @@
-import Intro from "./Intro";
+import Dapplets from "./dapplets";
 
-export {Intro}
+export {Dapplets}

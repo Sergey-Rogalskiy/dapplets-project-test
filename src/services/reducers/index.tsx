@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import { infoReducer } from './info';
+import { dappletsReducer } from './dapplets';
+import { tagsReducer } from './tags';
 
 export const rootReducer = combineReducers({
-  info: infoReducer,
+  dapplets: dappletsReducer,
+  tags: tagsReducer,
 });

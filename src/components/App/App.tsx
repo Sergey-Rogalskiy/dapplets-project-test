@@ -1,18 +1,19 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
-import { Intro } from '../../pages';
+import Header from '../Header/Header';
+import { Dapplets } from '../../pages';
 import './App.css';
 
 function App() {
   return (
     <>
-      <h1>Header</h1>
+      <Header />
       <Switch>
-        <Route path="/2">
-          <p>Second</p>
+        <Route path="/dapplets">
+          <Dapplets />
         </Route>
         <Route path="/">
-          <Intro />
+          <p>Intro</p>
         </Route>
       </Switch>
     </>

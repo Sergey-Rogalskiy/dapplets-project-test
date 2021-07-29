@@ -3,7 +3,7 @@ import {
 } from '../dapplets-hiring-api';
 import { TDapplets, AppThunk, AppDispatch } from '../../types';
 export const GET_DAPPLET_REQUEST:'GET_DAPPLET_REQUEST' = 'GET_DAPPLET_REQUEST';
-export const GET_DAPPLET_SUCCESS:'GET_ITEMSDAPPLET_SUCCESS' = 'GET_ITEMSDAPPLET_SUCCESS';
+export const GET_DAPPLET_SUCCESS:'GET_DAPPLET_SUCCESS' = 'GET_DAPPLET_SUCCESS';
 export const GET_DAPPLET_FAILED:'GET_DAPPLET_FAILED' = 'GET_DAPPLET_FAILED';
 
 

@@ -12,7 +12,7 @@ import {
     }
   
   const initialState: TInitialState = {
-    dappletsSuccess: [],
+    dappletsSuccess: null,
     dappletsRequest: false,
     dappletsFailed: false,
   };

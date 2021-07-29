@@ -12,25 +12,11 @@ function Tags() {
   }, [dispatch])
   return (
     <>
-      <h2>Tags</h2>
-      <p>Total: {tags.total}</p>
-      
-      <table className={s.table_dapplets}>
-        <tr>
-        <th>id</th>
-        <th>name</th>
-        </tr>
         {
           tags.data && tags.data.map((item: any) => {
-            return (
-            <tr>
-              <td>{item.id}</td>
-              <td>{item.name}</td>
-            </tr>
-            )
+            return  <span>{item.name}</span>
           })
         }
-      </table>
     </>
   );
 }

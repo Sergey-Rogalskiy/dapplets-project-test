@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import s from './test.module.css'
 
 function Intro() {
@@ -11,8 +12,8 @@ function Intro() {
         <p>в тестовое задание на должность Frontend Developer</p>
         <p>Мы строим платформу Аугментированного веба, состоящую из браузерного плагина и децентрализованных приложений (дапплетов), основанных на крипто-технологиях.</p>
         <p>Наша платформа создается по принципу open-source и доступна для разработчиков со всего мира.</p>
-        <button>DESTOP</button>
-        <button>MOBILE</button>
+        <Link to='/dapplets'>DESTOP</Link>
+        <Link to='/dapplets2'>MOBILE</Link>
       </div>
     </div>
   );

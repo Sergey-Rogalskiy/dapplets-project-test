@@ -4,3 +4,7 @@
 .intro {
     background-image: url('../assets/images/intro.svg');
 }
+
+.flex {
+    display: flex;
+}

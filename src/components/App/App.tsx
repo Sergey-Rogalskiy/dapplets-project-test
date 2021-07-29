@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import Header from '../Header/Header';
-import { Dapplets } from '../../pages';
+import { Dapplets, Intro } from '../../pages';
 import './App.css';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
           <Dapplets />
         </Route>
         <Route path="/">
-          <p>Intro</p>
+          <Intro />
         </Route>
       </Switch>
     </>

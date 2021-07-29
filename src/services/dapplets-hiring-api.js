@@ -10,11 +10,14 @@ export const getTagsRequest = async () => {
   const res = await getResourceRaw(`/tags`);
   return res;
 };
+export const getImageRequest = async (name) => {
+  const temp = '0cHr7wsqCKtwqs4MgvVKmJYvkN4WHiddsgQK3AZSM23FWJKESVuRIrm-bthPaYZZxzc.webp'
+  const res = await getImageRaw(`/files/${temp}`);
+  return res;
+};
 
 
 const getResourceRaw = async (url) => {
-  console.log(`${_apiBase}${url}`);
-  
   const res = await fetch(`${_apiBase}${url}`, {
     method: 'GET',
   });
@@ -22,6 +25,17 @@ const getResourceRaw = async (url) => {
     throw new Error(`Could not fetch '${url}', received '${res.status}'`)
   }
   return await res.json();
+};
+
+const getImageRaw = async (url) => {
+  const res = await fetch(`${_apiBase}${url}`, {
+    method: 'GET',
+  });
+  if (!res.ok) {
+    throw new Error(`Could not fetch '${url}', received '${res.status}'`)
+  }
+  console.log(res);
+  return await res;
 };
 
 const getResource = async (url, token) => {

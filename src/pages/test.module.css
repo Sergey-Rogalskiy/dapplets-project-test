@@ -1,3 +1,6 @@
 .table_dapplets {
     background-color: aqua;
 }
+.intro {
+    background-image: url('../assets/images/intro.svg');
+}

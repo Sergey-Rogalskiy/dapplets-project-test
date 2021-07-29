@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from '../types';
 import { getDapplets } from '../services/actions/dapplets';
 import Tags from '../components/Tags/Tags';
+import DappletImage from '../components/DappletImage/DappletImage';
 import s from './test.module.css'
 
 function Dapplets() {
@@ -41,7 +42,7 @@ function Dapplets() {
             return (
             <tr>
               <td>{item.id.slice(0,5)}</td>
-              <td>{item.icon.slice(0,5)}</td>
+              <td><DappletImage name={item.icon} /></td>
               <td>{item.title}</td>
               <td>{item.author}</td>
               <td>{item.rating}</td>

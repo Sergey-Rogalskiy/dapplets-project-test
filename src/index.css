@@ -13,6 +13,6 @@ code {
     monospace;
 }
 
-#root {
-  display: flex;
+a {
+  text-decoration: none;
 }

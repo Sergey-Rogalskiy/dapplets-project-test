@@ -1,11 +1,69 @@
 .sidebar {
+    background: rgb(185,251,255);
+    background: linear-gradient(180deg, rgba(185,251,255,0.2) 0%, rgba(227,220,255,1) 100%);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: solid 1px #fff;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 20px 0px 0px;
+    padding: 0px 20px;
+}
+
+.menu.list a {
+    margin: 00px 0px;
+    padding: 5px 20px;
+    font: 0.7rem "Fira Sans", sans-serif;
+}
+
+.menu a {
+    margin: 10px 0px;
+    padding: 5px 20px;
+}
+
+.menu a:hover {
+    background-color: rgb(255, 255, 255, 40%);
+    text-shadow: 0px 0px 16px rgb(0, 89, 255), 0px 0px 8px rgba(0, 89, 255), 0px 4px 32px rgba(0, 89, 255);
+    
+}
+
+.a_active {
+    background-color: rgb(255, 255, 255, 40%);
+    text-shadow: 0px 0px 16px rgb(0, 89, 255), 0px 0px 8px rgba(0, 89, 255), 0px 4px 32px rgba(0, 89, 255);
+    border-right: solid 3px #0059ff;
+}
+
+.a_active img {
+    text-shadow: 0px 0px 16px rgb(0, 89, 255), 0px 0px 8px rgba(0, 89, 255), 0px 4px 32px rgba(0, 89, 255);
 
 }
-.main_menu {
-    display: flex;
 
+.a_active:hover {
+    cursor: default;
 }
-.list_menu {
-    display: flex;
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px 0px 0px;
+    padding: 0px 20px;
+}
+.tags span {
+    background-color: #5241BF;
+    color: white;
+    border: solid 1px white;
+    border-radius: 25%;
+    font: 0.7rem "Fira Sans", sans-serif;
+    padding: 2px 5px;
 }

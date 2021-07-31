@@ -52,7 +52,6 @@ export const getTags: AppThunk = () => (dispatch: AppDispatch) => {
     }
   })
   .catch(err => {
-    console.log(err);
       dispatch(getTagsFailedAction(err));
   })
 }

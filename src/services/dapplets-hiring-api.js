@@ -34,7 +34,6 @@ const getImageRaw = async (url) => {
   if (!res.ok) {
     throw new Error(`Could not fetch '${url}', received '${res.status}'`)
   }
-  console.log(res);
   return await res;
 };
 

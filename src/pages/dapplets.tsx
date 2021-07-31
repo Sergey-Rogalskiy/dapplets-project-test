@@ -14,11 +14,11 @@ function Dapplets() {
     dispatch(getDapplets())
   }, [dispatch])
   return (
-    <div className={s.flex}>
-      <Sidebar />
-      <DappletsTable data={dapplets}/>
-      <SidebarRight />
-    </div>
+      <div className={s.flex}>
+        <Sidebar />
+        <DappletsTable data={dapplets}/>
+        <SidebarRight />
+      </div>
   );
 }
 

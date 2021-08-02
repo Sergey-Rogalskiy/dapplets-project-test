@@ -8,60 +8,58 @@ function DappletsTableElement(props:any) {
   const tags = useSelector(store => store.tags.tagsSuccess.data)
   const item = props.item
   return (
-    <>
-      <tr key={item.id}>
-          <td className={s.flex}>
+      <li key={item.id} className={s.element}>
+          <div className={s.flex}>
             <img src={BurgerIcon} alt='-' />
             <DappletImage name={item.icon} />
-          </td>
-          <td>
+          </div>
+          <div>
             <div>
-              <p>{item.title}</p>
-              <p>{item.address.slice(0,5)}...{item.address.slice(-5)}</p>
+              <p className={s.title}>{item.title}</p>
+              <p className={s.address}>{item.address.slice(0,5)}...{item.address.slice(-5)}</p>
             </div>
-          </td>
-          <td>{item.description}</td>
-          <td>{item.author}</td>
-          {
-            item.tags.length ? (
-              item.tags.map((tag:any) => {
-                return (
-                  <div className={`${s.tags}`}>
-                    <td>
-                        <span>{tags[tag]?.name}</span>
-                    </td>
-                  </div>
-                )
-              })
-            ) : (
-              <div className={`${s.tags}`}>
-                <td>
+          </div>
+          <div>{item.description}</div>
+          <div className={s.author}>{item.author}</div>
+          <div className={`${s.tags}`}>
+            {
+              item.tags.length ? (
+                item.tags.map((tag:any) => {
+                  return (
+                      <div>
+                          <span>{tags[tag]?.name}</span>
+                      </div>
+                  )
+                })
+              ) : (
+                <div>
                   <span>'No Tags'</span>
-                </td>
-            </div>
-              
-            )
-          }
+                </div>
+              )
+            }
+          </div>
           
-          <td><button className={s.button_install}>Install</button></td>
+          <div>
+            <button className={s.button_install}>Install</button>
+          </div>
+          
           <div className={s.content}>
-            <td>{item.text_1}</td>
-            <td>{item.text_2}</td>
-            <td>{item.text_3}</td>
-            <td>{item.text_4}</td>
-            <td>{item.text_5}</td>
-            <td>{item.text_6}</td>
-            <td>{item.text_7}</td>
-            <td>{item.text_8}</td>
-            <td>{item.text_9}</td>
+            <div>{item.text_1}</div>
+            <div>{item.text_2}</div>
+            <div>{item.text_3}</div>
+            <div>{item.text_4}</div>
+            <div>{item.text_5}</div>
+            <div>{item.text_6}</div>
+            <div>{item.text_7}</div>
+            <div>{item.text_8}</div>
+            <div>{item.text_9}</div>
           </div>
           <div className={s.hidden_search}>
-            <td>{item.rating}</td>
-            <td>{item.released}</td>
-            <td>{item.downloads}</td>
+            <div>{item.rating}</div>
+            <div>{item.released}</div>
+            <div>{item.downloads}</div>
           </div>
-      </tr>
-    </>
+      </li>
   );
 }
 

@@ -1,5 +1,6 @@
 .flex {
     display: flex;
+    align-items: center;
 }
 
 .glass_card {
@@ -47,10 +48,6 @@
     justify-content: space-between;
 }
 
-.search_panel::after {
-    border: solid 1px #fff;
-}
-
 .search_input {
     background: url('../../assets/images/menu/search.svg')  no-repeat scroll 3px 3px;
     background-color: #fff;
@@ -60,10 +57,58 @@
     border-radius: 10px;
 }
 
+.search_input:focus {
+   outline: none;
+}
+
 .search_dropdown {
     background-color: #fff;
     padding: 5px;
     margin: 20px;
     border-radius: 10px;
     height: auto;
+}
+
+.search_dropdown:focus {
+   outline: none;
+}
+
+.separator {
+    border: solid 1px #fff;
+    margin: 0px 20px 20px;
+}
+
+.element {
+    display: flex;
+    background-color: salmon;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(237, 251, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: solid 1px #fff;
+}
+
+.element > div {
+    margin: 5px;
+}
+
+.title {
+    color: #000;
+    margin: 0;
+}
+
+.author {
+    color: #999;
+    margin: 0;
+}
+
+.address {
+    color: #999;
+    margin: 0;
+}
+
+.button_install {
+    
 }

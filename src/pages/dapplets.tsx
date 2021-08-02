@@ -4,7 +4,7 @@ import { getDapplets } from '../services/actions/dapplets';
 import DappletsTable from '../components/DappletsTable/DappletsTable';
 import Sidebar from '../components/Sidebar/Sidebar';
 import SidebarRight from '../components/SidebarRight/SidebarRight';
-import s from './test.module.css'
+import s from './dapplets.module.css'
 
 function Dapplets() {
   const dispatch = useDispatch()

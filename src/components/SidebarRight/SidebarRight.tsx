@@ -5,7 +5,7 @@ import s from './sidebarRight.module.css';
 
 function SidebarRight() {
   return (
-    <div>
+    <div className={s.sidebar}>
       <h2>Dapplet settings</h2>
       <p>Create new list</p>
       <div>

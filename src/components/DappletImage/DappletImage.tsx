@@ -33,7 +33,7 @@ function DappletImage(props:{name:string}) {
   }
   const temp = `https://dapplets-hiring-api.herokuapp.com/api/v1/files/${props.name}`
   return (
-    <img src={temp} alt='-' width='50px'>
+    <img className={s.dapplets_img} src={temp} alt='-'>
     </img>
   );
 }
